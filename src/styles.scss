@@ -1,1 +1,89 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  // COLORS
+  --color-background: rgb(255, 255, 255);
+  --color-dark-background: rgb(249, 251, 250);
+
+  --color-text: rgb(54, 54, 54);
+  --color-light-text: rgb(195, 208, 216);
+  --color-white-text: rgb(255, 255, 255);
+
+  --color-primary: rgb(58, 83, 116);
+  --color-light-primary: rgb(149, 164, 185);
+  --color-dark-primary: rgb(40, 64, 96);
+
+  --color-secondary: rgb(225, 131, 55);
+  --color-light-secondary: rgb(253, 230, 214);
+  --color-dark-secondary: rgb(225, 122, 43);
+
+
+  // FONTS
+  --default-font-size: 16px;
+  --text-font-size: 14px;
+  --header-font-size: 30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: var(--font-primary);
+  letter-spacing: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: var(--font-secondary);
+  font-size: 30px;
+  font-weight: 700;
+  @media (max-width: 768px) {
+    font-size: 26px;
+  }
+  @media (max-width: 576px) {
+    font-size: 20px;
+  }
+}
+.container {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+  @media (min-width: 768px) {
+    max-width: 710px;
+  }
+  @media (min-width: 992px) {
+    max-width: 930px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1180px;
+  }
+  @media (min-width: 1400px) {
+    max-width: 1380px;
+  }
+}
